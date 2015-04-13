@@ -1,0 +1,17 @@
+[user]
+	name = Achal Shah
+	email = achals@gmail.com
+[core]
+    editor = e -nw
+[alias]
+    ffm = merge --ff-only
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    dc = diff --cached
+    lg = log -p
+    who = shortlog -s --
+[push]
+	default = simple
