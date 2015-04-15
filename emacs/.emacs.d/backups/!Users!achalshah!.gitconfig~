@@ -1,0 +1,7 @@
+[user]
+	name = Achal Shah
+	email = achals@gmail.com
+[core]
+    editor = emacs
+[push]
+	default = simple
