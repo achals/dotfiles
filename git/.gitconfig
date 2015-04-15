@@ -2,7 +2,7 @@
 	name = Achal Shah
 	email = achals@gmail.com
 [core]
-    editor = e -nw
+    editor = emacs -nw
 [alias]
     ffm = merge --ff-only
     st = status
