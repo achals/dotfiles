@@ -14,7 +14,7 @@
 (setq diff-switches "-u")
 
 ;; always end a file with a newline
-;(setq require-final-newline 'query)
+(setq require-final-newline 'query)
 
 ;;; uncomment for CJK utf-8 support for non-Asian users
 ;; (require 'un-define)
@@ -35,7 +35,7 @@
 
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("melpa" . "https://melpa.org/packages/") t)
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
@@ -46,7 +46,9 @@
                       clojure-mode
                       cider
                       color-theme
-                      python-mode))
+                      python-mode
+                      rust-mode
+                      magit))
 (dolist (p my-packages)
   (unless (package-installed-p p)
     (package-install p)))
@@ -69,3 +71,5 @@
 ;; regular auto-complete initialization
 (require 'auto-complete-config)
 (ac-config-default)
+
+(global-set-key (kbd "C-x g") 'magit-status)
