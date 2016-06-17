@@ -43,8 +43,6 @@
 
 (defvar my-packages '(better-defaults
                       projectile
-                      clojure-mode
-                      cider
                       color-theme
                       python-mode
                       rust-mode
