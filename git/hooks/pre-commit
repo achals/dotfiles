@@ -6,12 +6,11 @@ from git import Repo
 
 def main():
     repo = Repo('.')
-    active_branch = repo.active_branch
-    if (active_branch.name == 'master'):
-        print('No commits to master allowed. Please create a feature branch.')
-        sys.exit(1)
-    else:
-        print('Current branch: {}'.format(active_branch.name))
+    if not repo.head.is_detached:
+        active_branch = repo.active_branch
+        if active_branch.name is 'master':
+            print('No commits to master allowed. Please create a feature branch.')
+            sys.exit(1)
 
 if __name__ == '__main__':
     main()
