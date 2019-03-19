@@ -3,6 +3,10 @@
 
 export PATH=$(brew --prefix)/sbin:$(brew --prefix)/bin:$PATH:$HOME/bin
 
+export UBER_HOME=/Users/achal/Uber
+export UBER_OWNER=achal@uber.com
+export UBER_LDAP_UID="achal"
+
 # added by newengsetup
 export EDITOR=emacs
 export VAGRANT_DEFAULT_PROVIDER=aws
