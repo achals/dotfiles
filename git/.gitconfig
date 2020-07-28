@@ -1,6 +1,6 @@
 [user]
 	name = Achal Shah
-	email = achals@gmail.com
+	email = achal@tecton.ai
 [branch]
 	autosetuprebase = always
 [core]
@@ -9,6 +9,7 @@
 [alias]
     ffm = merge --ff-only
     st = status
+    sw = switch
     ci = commit
     br = branch
     co = checkout
