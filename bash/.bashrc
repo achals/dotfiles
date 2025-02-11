@@ -8,4 +8,3 @@ export PROMPT_COMMAND='history -a'
 function cs () {
     cd "$@" && ls
     }
-
