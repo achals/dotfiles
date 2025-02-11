@@ -14,3 +14,5 @@ brew 'docker'
 brew 'colima'
 brew 'emacs'
 brew 'python3'
+
+brew 'pre-commit'
