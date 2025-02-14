@@ -112,5 +112,5 @@ function cs () {
     cd "$@" && ls
 }
 
-eval "$(direnv hook bash)"
 autoload -Uz compinit && compinit
+eval "$(direnv hook zsh)"
