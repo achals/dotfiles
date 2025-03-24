@@ -18,3 +18,4 @@ brew 'python3'
 brew 'pre-commit'
 
 cask '1password-cli'
+cask 'rectangle'
