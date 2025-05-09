@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 # install packages
 
 brew 'git'
+brew 'git-spice'
 brew 'bash-completion'
 
 
