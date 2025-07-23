@@ -114,3 +114,7 @@ function cs () {
 
 autoload -Uz compinit && compinit
 eval "$(direnv hook zsh)"
+export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export SNOODEV_DIR="/Users/achal.shah/src/snoodev"
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"

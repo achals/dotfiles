@@ -1,6 +1,6 @@
 [user]
 	name = Achal Shah
-	email = achal@tecton.ai
+	email = achal.shah@reddit.com
 [branch]
 	autosetuprebase = always
 [core]
@@ -28,3 +28,7 @@
     ff = only
 [http "https://gopkg.in"]
 	followRedirects = true
+[credential]
+	helper = osxkeychain
+[color]
+	ui = true

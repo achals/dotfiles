@@ -20,3 +20,10 @@ brew 'pre-commit'
 
 cask '1password-cli'
 cask 'rectangle'
+
+cask 'ghostty'
+cask 'zed'
+
+cask 'claude'
+cask 'chatgpt'
+cask 'warp'
