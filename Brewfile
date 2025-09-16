@@ -27,6 +27,7 @@ cask 'zed'
 cask 'claude'
 cask 'chatgpt'
 cask 'warp'
+cask 'ollama'
 
 # For Githubpages
 brew 'chruby'
