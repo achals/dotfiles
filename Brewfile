@@ -27,3 +27,7 @@ cask 'zed'
 cask 'claude'
 cask 'chatgpt'
 cask 'warp'
+
+# For Githubpages
+brew 'chruby'
+brew 'ruby-install'
