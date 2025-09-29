@@ -8,6 +8,7 @@ brew 'bash-completion'
 
 brew 'direnv'
 brew 'stow'
+brew 'ripgrep'
 brew 'uv'
 brew 'gh'
 brew 'zig'
@@ -27,7 +28,7 @@ cask 'zed'
 cask 'claude'
 cask 'chatgpt'
 cask 'warp'
-cask 'ollama'
+cask 'ollama-app'
 
 # For Githubpages
 brew 'chruby'
