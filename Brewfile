@@ -26,9 +26,13 @@ cask 'ghostty'
 cask 'zed'
 
 cask 'claude'
+cask 'claude-code'
 cask 'chatgpt'
 cask 'warp'
 cask 'ollama-app'
+cask 'discord'
+cask 'whatsapp'
+cask 'openclaw'
 
 # For Githubpages
 brew 'chruby'
