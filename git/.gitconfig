@@ -1,11 +1,10 @@
 [user]
 	name = Achal Shah
-	email = achal.shah@reddit.com
 [branch]
 	autosetuprebase = always
 [core]
     editor = emacs -nw
-    excludesfile = /Users/achal/.gitignore_global
+    excludesfile = ~/.gitignore_global
 [alias]
     ffm = merge --ff-only
     st = status
@@ -32,3 +31,6 @@
 	helper = osxkeychain
 [color]
 	ui = true
+
+[include]
+    path = ~/.gitconfig.local

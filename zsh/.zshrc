@@ -114,7 +114,12 @@ function cs () {
 
 autoload -Uz compinit && compinit
 eval "$(direnv hook zsh)"
-export PATH="/opt/homebrew/sbin:$PATH"
-export PATH="/opt/homebrew/bin:$PATH"
-export SNOODEV_DIR="/Users/achal.shah/src/snoodev"
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+# Homebrew — works on Apple Silicon (/opt/homebrew) and Intel (/usr/local)
+if [[ -x "/opt/homebrew/bin/brew" ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ -x "/usr/local/bin/brew" ]]; then
+    eval "$(/usr/local/bin/brew shellenv)"
+fi
+
+# Machine-specific config (not committed)
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
