@@ -1,5 +1,6 @@
 [user]
 	name = Achal Shah
+	email = achals@gmail.com
 [branch]
 	autosetuprebase = always
 [core]
