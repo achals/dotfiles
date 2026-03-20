@@ -1,3 +1,16 @@
+#!/bin/bash
+set -euo pipefail
+
+# Install Homebrew if not present
+if ! command -v brew &>/dev/null; then
+    echo "Installing Homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# Install all packages from Brewfile
+brew bundle --file="$(dirname "$0")/Brewfile"
+
+# Stow dotfiles (stow is now guaranteed by the Brewfile)
 stow bash -t $HOME
 stow git -t $HOME
 stow zsh -t $HOME
