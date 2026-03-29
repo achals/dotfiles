@@ -20,7 +20,8 @@ brew 'python3'
 brew 'pre-commit'
 
 cask '1password-cli'
-cask 'rectangle'
+cask 'rectangle-pro'
+cask 'notion'
 
 cask 'ghostty'
 cask 'zed'
