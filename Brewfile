@@ -3,7 +3,7 @@ cask_args appdir: '/Applications'
 
 brew 'git'
 brew 'git-spice'
-brew 'bash-completion'
+brew 'gh'
 
 
 brew 'direnv'
