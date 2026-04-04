@@ -15,6 +15,14 @@ stow bash -t $HOME
 stow git -t $HOME
 stow zsh -t $HOME
 
+# Install oh-my-zsh if not present (clone directly to avoid installer balking at existing dir)
+if [[ ! -f "$HOME/.oh-my-zsh/oh-my-zsh.sh" ]]; then
+    echo "Installing oh-my-zsh..."
+    git clone https://github.com/ohmyzsh/ohmyzsh.git "$HOME/.oh-my-zsh-tmp"
+    cp -r "$HOME/.oh-my-zsh-tmp/." "$HOME/.oh-my-zsh/"
+    rm -rf "$HOME/.oh-my-zsh-tmp"
+fi
+
 # Taken from https://github.com/zellwk/dotfiles/blob/master/install-zsh.sh
 ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
 
