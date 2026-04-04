@@ -23,6 +23,7 @@ cask '1password'
 cask '1password-cli'
 cask 'rectangle-pro'
 cask 'notion'
+cask 'slack'
 
 cask 'ghostty'
 cask 'zed'
