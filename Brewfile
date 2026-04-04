@@ -19,6 +19,7 @@ brew 'python3'
 
 brew 'pre-commit'
 
+cask '1password'
 cask '1password-cli'
 cask 'rectangle-pro'
 cask 'notion'
@@ -33,7 +34,6 @@ cask 'warp'
 cask 'ollama-app'
 cask 'discord'
 cask 'whatsapp'
-cask 'openclaw'
 
 # For Githubpages
 brew 'chruby'
