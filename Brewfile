@@ -24,6 +24,7 @@ cask '1password-cli'
 cask 'rectangle-pro'
 cask 'notion'
 cask 'slack'
+cask 'intellij-idea'
 
 cask 'ghostty'
 cask 'zed'
