@@ -107,6 +107,7 @@ export EDITOR="emacs"
 
 
 alias e="emacs -nw"
+alias gs="git-spice"
 
 function cs () {
     cd "$@" && ls
