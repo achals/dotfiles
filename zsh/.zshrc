@@ -106,6 +106,32 @@ export EDITOR="emacs"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
+# Kube context segment for agnoster theme
+prompt_kube() {
+  (( $+commands[kubectl] )) || return
+  local kube_ctx=$(kubectl config current-context 2>/dev/null)
+  [[ -z "$kube_ctx" ]] && return
+  local kube_ns=$(kubectl config view --minify --output 'jsonpath={..namespace}' 2>/dev/null)
+  [[ -n "$kube_ns" ]] && kube_ctx="${kube_ctx}/${kube_ns}"
+  prompt_segment cyan black "⎈ ${kube_ctx}"
+}
+
+# Override agnoster's build_prompt to include kube context
+build_prompt() {
+  RETVAL=$?
+  prompt_status
+  prompt_virtualenv
+  prompt_aws
+  prompt_terraform
+  prompt_kube
+  prompt_context
+  prompt_dir
+  prompt_git
+  prompt_bzr
+  prompt_hg
+  prompt_end
+}
+
 alias e="emacs -nw"
 alias gs="git-spice"
 
