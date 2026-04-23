@@ -36,6 +36,7 @@ cask 'warp'
 cask 'ollama-app'
 cask 'discord'
 cask 'whatsapp'
+cask 'visual-studio-code'
 
 # For Githubpages
 brew 'chruby'
