@@ -28,6 +28,7 @@ cask 'intellij-idea'
 
 cask 'ghostty'
 cask 'zed'
+cask 'caffeine'
 
 cask 'claude'
 cask 'claude-code'
