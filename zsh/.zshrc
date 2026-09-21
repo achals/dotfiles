@@ -134,6 +134,7 @@ build_prompt() {
 
 alias e="emacs -nw"
 alias gs="git-spice"
+alias k="kubectl"
 
 function cs () {
     cd "$@" && ls
