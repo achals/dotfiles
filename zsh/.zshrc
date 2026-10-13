@@ -136,6 +136,8 @@ alias e="emacs -nw"
 alias gs="git-spice"
 alias k="kubectl"
 
+export AWS_MFA_OP_ITEM=delphina-aws-totp
+
 function cs () {
     cd "$@" && ls
 }
